@@ -3,7 +3,7 @@
 Supplementary information and code for _Likelihood-based Inference for Partially Observed Epidemics on Dynamic Networks_
 
 ## Things included
-1. suppmentary material, with derivations, proofs, and experiment details and results (the "supplement.pdf" can't be accessed in anonymous mode, so please see it [here](https://www.dropbox.com/s/v6mf281je7ho4tu/supplement.pdf?dl=0))
+1. suppmentary material, with derivations, proofs, and experiment details and results (the "supplement.pdf" file can't be accessed in anonymous mode, so please read it [here](https://www.dropbox.com/s/v6mf281je7ho4tu/supplement.pdf?dl=0))
 2. simulation codes (both SIR- and SIS-type) epidemic processes on adaptive networks
 3. inference codes on complete data
 4. inference codes on partially observed data w/ missing recovery times
