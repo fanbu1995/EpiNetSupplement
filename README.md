@@ -1,5 +1,5 @@
 
-# CoEpiNet
+# EpiNetSupplement
 Supplementary information and code for _Likelihood-based Inference for Partially Observed Epidemics on Dynamic Networks_
 
 ## Things included
