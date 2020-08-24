@@ -57,7 +57,7 @@ inf.rej = infer_miss_recov(miss_dats, priors = pr, output.sams = 100,
 inf.MH =  infer_miss_recov(miss_dats, priors = pr, output.sams = 100, 
                            samples = 1000, burn = 500, thin = 2, impute = "MH")
                            
-# run diagonostics
+# run diagnostics
 infer.diag(inf.fil, method="filter", plot=T)
 infer.diag(inf.rej, method="reject", plot=T)
 infer.diag(inf.MH, method="MH",  plot=T)
@@ -84,7 +84,7 @@ bench::press(
 Another function `pipeline_miss_recov` in the same file goes through the following pipeline: generate missingness, conduct inference, and run diagonostics. For example, to generate 100% missing from the data in "ex3dat_5.rds" and then conduct inference using all three data augmentation samplers (proposed, rejection, MH) as well as compare them:
 ```r
 source("./inference_miss_recov.R")
-res.pipe = pipeline_miss_recov("ex3dat_5, fpath = "./", interval = 7, miss_prop = 1, miss_model = "SIR",
+res.pipe = pipeline_miss_recov("ex3dat_5", fpath = "./", interval = 7, miss_prop = 1, miss_model = "SIR",
                                 doMH = T, save_miss = F, pdfname = "pipeline_plots")
 ```
 And all the plots will be saved to a pdf file named "pipeline_plots.pdf".
